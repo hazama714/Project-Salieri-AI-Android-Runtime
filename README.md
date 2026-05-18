@@ -1,5 +1,9 @@
 # Project Salieri AI
 
+<p align="center">
+  <img src="docs/images/logo.png" width="700">
+</p>
+
 Android-based AI Agent Runtime Architecture
 
 ---
