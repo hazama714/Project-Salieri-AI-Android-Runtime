@@ -4,6 +4,12 @@
 </p>
 Android-based AI Agent Runtime Architecture
 
+## Runtime Preview
+
+Project Salieri AI demo video:
+
+https://youtu.be/q13Tv_7YSMM
+
 ---
 
 # 日本語
