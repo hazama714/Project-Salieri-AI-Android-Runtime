@@ -1,0 +1,333 @@
+フォルダー パスの一覧:  ボリューム working
+ボリューム シリアル番号は 2ADE-ADAB です
+F:\GITHUB\PROJECT SALIER IAI GITHUB\ASSETS
+├─Animator
+│  ├─Animator
+│  │      StandingIdle.controller
+│  │      
+│  └─motion
+│      └─Standing
+│              StandingIdle.anim
+│              
+├─App
+│  ├─Communication
+│  │  ├─Bluetooth
+│  │  │      AndroidBluetoothSender.cs
+│  │  │      
+│  │  ├─Interface
+│  │  │      ICommandSender.cs
+│  │  │      
+│  │  └─Serial
+│  │          SerialSender_PC.cs
+│  │          
+│  ├─ModeSwitching
+│  │      ControlModeManager.cs
+│  │      
+│  ├─Permissions
+│  │      AndroidBluetoothPermission.cs
+│  │      
+│  └─Settings
+│          RuntimeConnectionSettings.cs
+│          
+├─Avatar
+│  └─VRM
+├─Body
+│  ├─Action
+│  │      BodyActionExecutor.cs
+│  │      
+│  ├─Parts
+│  │  └─Controller
+│  │          ArmController.cs
+│  │          BodyController.cs
+│  │          NeckController.cs
+│  │          TorsoController.cs
+│  │          
+│  └─Servo
+│      ├─Config
+│      ├─Safety
+│      └─Units
+│              ServoControlUnit.cs
+│              
+├─Bootloader
+│  ├─AddFeature
+│  │      LlamaNativeBootCheck.cs
+│  │      VoiceVoxBootCheck.cs
+│  │      
+│  ├─AndroidIO
+│  │      BatteryBootCheck.cs
+│  │      BluetoothBootCheck.cs
+│  │      CameraBootCheck.cs
+│  │      LightSensorBootCheck.cs
+│  │      MicrophoneBootCheck.cs
+│  │      MotionSensorBootCheck.cs
+│  │      ThermalBootCheck.cs
+│  │      
+│  ├─BootCheck
+│  │      AndroidNativeLibraryBootCheck.cs
+│  │      BootCheckBase.cs
+│  │      BootCheckRunner.cs
+│  │      FileExistsBootCheck.cs
+│  │      InitialAssetInstaller.cs
+│  │      InitialSetupGate.cs
+│  │      PermissionBootCheck.cs
+│  │      
+│  └─Debug
+│      ├─Logger
+│      │      LogToFile.cs
+│      │      
+│      ├─Tools
+│      └─Visualization
+├─Condition
+│      RobotConditionCollector.cs
+│      SelfCheckSnapshot.cs
+│      SelfStateSummary.cs
+│      
+├─Core
+│  ├─Action
+│  │      ActionResult.cs
+│  │      
+│  ├─Affordance
+│  │  │  AffordanceCandidate.cs
+│  │  │  AffordanceResolver.cs
+│  │  │  AffordanceType.cs
+│  │  │  BodyCapability.cs
+│  │  │  
+│  │  └─Debug
+│  ├─Autonomy
+│  │  │  AutonomousClock.cs
+│  │  │  AutonomousSpeechService.cs
+│  │  │  AutonomousThinkService.cs
+│  │  │  
+│  │  └─Debug
+│  ├─Buffer
+│  │      FacePerceptionBuffer.cs
+│  │      
+│  ├─Execution
+│  │      ExecutionLevel.cs
+│  │      ExecutionResourceManager.cs
+│  │      StateExecutionProfile.cs
+│  │      
+│  ├─Limbo
+│  │      LimboPermission.cs
+│  │      LimboPermissionResolver.cs
+│  │      
+│  ├─LLM
+│  │  ├─Cloud
+│  │  │      CloudActionProvider.cs
+│  │  │      CloudLLMActionParser.cs
+│  │  │      CloudLLMClient.cs
+│  │  │      CloudLLMSettings.cs
+│  │  │      CloudSpeechProvider.cs
+│  │  │      
+│  │  ├─Common
+│  │  │      ILLMActionProvider.cs
+│  │  │      ILLMSpeechProvider.cs
+│  │  │      LLMActionResponseParser.cs
+│  │  │      LLMRouteController.cs
+│  │  │      LLMSpeechDecision.cs
+│  │  │      
+│  │  ├─Debug
+│  │  │      LocalLLMHelloTest.cs
+│  │  │      
+│  │  ├─IntentOutput
+│  │  │      LLMActionDecision.cs
+│  │  │      
+│  │  ├─Local
+│  │  │      LocalActionProvider.cs
+│  │  │      LocalSpeechProvider.cs
+│  │  │      
+│  │  ├─LocalRuntime
+│  │  │      GenerationGateway.cs
+│  │  │      LocalLLMRuntime.cs
+│  │  │      LocalLLMRuntimeHost.cs
+│  │  │      ResumeManager.cs
+│  │  │      SingleFlight.cs
+│  │  │      
+│  │  ├─Native
+│  │  │      LlamaShimBindings.cs
+│  │  │      
+│  │  ├─Output
+│  │  │      StopWordsMatcherUtf8.cs
+│  │  │      
+│  │  ├─Profile
+│  │  │      LLMProfileManager.cs
+│  │  │      
+│  │  └─Prompt
+│  │          CloudActionPromptBuilder.cs
+│  │          CloudSpeechPromptBuilder.cs
+│  │          LocalActionPromptBuilder.cs
+│  │          LocalSpeechPromptBuilder.cs
+│  │          PromptTextUtility.cs
+│  │          
+│  ├─Memory
+│  │  ├─LongTerm
+│  │  ├─ShortTerm
+│  │  └─UserProfiles
+│  ├─NeuralEngine
+│  │  │  NeuralEngineManager.cs
+│  │  │  
+│  │  ├─ActionDispatcher
+│  │  ├─EmotionMapper
+│  │  ├─FeedbackLoop
+│  │  ├─IntentInterpreter
+│  │  ├─MotionPlanner
+│  │  └─PriorityController
+│  ├─Opening
+│  │      OpeningCeremonyManager.cs
+│  │      
+│  ├─Persona
+│  │  │  PersonaBaseProfile.cs
+│  │  │  PersonaPromptBuilder.cs
+│  │  │  PersonaPromptLoader.cs
+│  │  │  RelationshipRulesProfile.cs
+│  │  │  SpeechStyleProfile.cs
+│  │  │  
+│  │  └─Json
+│  │          persona_base.json
+│  │          relationship_rules.json
+│  │          speech_style.json
+│  │          
+│  ├─RelationIntent
+│  │      RelationalIntentRequest.cs
+│  │      RelationalIntentType.cs
+│  │      
+│  ├─Search
+│  │  ├─ExternalSearch
+│  │  └─KnowledgeImport
+│  ├─Spatial
+│  │      SpatialContext.cs
+│  │      SpatialDirection.cs
+│  │      TargetDistance.cs
+│  │      
+│  ├─State
+│  │      InteractionState.cs
+│  │      InteractionStateController.cs
+│  │      SelfStateCollector.cs
+│  │      
+│  └─UI
+│          RobotStatusView.cs
+│          
+├─Expression
+│  ├─Emotion
+│  │      EmotionDebugSink.cs
+│  │      EmotionExtractor.cs
+│  │      EmotionPipeline.cs
+│  │      
+│  ├─Face
+│  │  │  FBXExpressionController.cs
+│  │  │  IExpressionController.cs
+│  │  │  VRM0ExpressionController.cs
+│  │  │  
+│  │  ├─Reaction
+│  │  │      ExpressionReactionHub.cs
+│  │  │      FaceExpressionTrigger.cs
+│  │  │      
+│  │  └─State
+│  │          ExpressionStateController.cs
+│  │          
+│  ├─LipSync
+│  │      ILipSyncController.cs
+│  │      LipSyncController_FBX.cs
+│  │      LipSyncController_VRM0.cs
+│  │      
+│  ├─Motion
+│  │      CharacterMotionController.cs
+│  │      
+│  ├─Mouth
+│  │      AudioMouthDriver.cs
+│  │      IMouthController.cs
+│  │      MouthController_VRM0.cs
+│  │      
+│  └─Voice
+│      ├─Audio
+│      ├─Core
+│      │      AndroidTtsVoiceOutput.cs
+│      │      DebugVoiceOutput.cs
+│      │      IVoiceOutput.cs
+│      │      VoiceController.cs
+│      │      VoicevoxVoiceOutput.cs
+│      │      
+│      ├─Data
+│      ├─Debug
+│      ├─Models
+│      │      VoiceModelInfo.cs
+│      │      VoiceSpeakerInfo.cs
+│      │      VoiceSpeakerListWrapper.cs
+│      │      VoiceStyleInfo.cs
+│      │      
+│      ├─Native
+│      │      VoicevoxAndroidBridge.cs
+│      │      
+│      ├─Playback
+│      │      VoicePlaybackController.cs
+│      │      
+│      ├─Registry
+│      │      VoiceSpeakerRegistry.cs
+│      │      
+│      ├─Response
+│      │      ResponseBus.cs
+│      │      ResponseSanitizer.cs
+│      │      UnifiedResponseEventHub.cs
+│      │      
+│      ├─Runtime
+│      │      VoiceModelManager.cs
+│      │      
+│      ├─Text
+│      │      RubyEntry.cs
+│      │      VoiceTextPreprocessor.cs
+│      │      
+│      └─Vocalization
+│              WavUtility.cs
+│              
+├─Maintenance
+│  ├─Calibration
+│  │  └─Servo
+│  └─UI
+│      ├─Prefabs
+│      │  └─ServoMaintenance
+│      │          ServoMaintenancePanel.prefab
+│      │          
+│      └─Scripts
+│          └─Servo
+│                  ServoMaintenancePanel.cs
+│                  
+├─Plugins
+│  └─Android
+│      │  AndroidManifest.xml
+│      │  
+│      ├─libs
+│      │  └─arm64-v8a
+│      └─src
+│          └─main
+│              └─java
+│                  └─com
+│                      └─hazama
+│                          └─voicevoxruntime
+│                                  VoicevoxRuntimeManager.kt
+│                                  VoicevoxUnityBridge.kt
+│                                  
+├─Resources
+│  └─Settings
+│      └─LLM
+├─Scenes
+│  │  BootScene.unity
+│  │  MainScene.unity
+│  │  MaintenanceScene_for_Android.unity
+│  │  MaintenanceScene_for_PC.unity
+│  │  
+│  └─Test
+│          CameraTestScene.unity
+│          
+├─Sensors
+│  ├─Audio
+│  └─Camera
+│          AndroidCameraPermission.cs
+│          CameraInput.cs
+│          FaceBoxUI.cs
+│          FaceDetector.cs
+│          FaceDetector_OpenCV.cs
+│          FaceToAngleConverter.cs
+│          
+└─StreamingAssets
+    ├─OpenCVForUnityExamples
+    └─VoiceVox
