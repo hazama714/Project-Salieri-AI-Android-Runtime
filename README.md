@@ -4,6 +4,10 @@
 </p>
 Android-based AI Agent Runtime Architecture
 
+## Technical Preprint (Zenodo DOI):
+
+https://zenodo.org/records/20319925
+
 ## Runtime Preview
 
 Project Salieri AI demo video:
