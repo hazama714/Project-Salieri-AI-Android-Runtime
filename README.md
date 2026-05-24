@@ -115,6 +115,7 @@ External Device
 現在、このリポジトリには以下の構成図が含まれています。
 
 ### Current Runtime Architecture
+![Event-Driven Runtime Flow](docs/images/current_event_driven_runtime_flow.png)
 
 #### Overall Runtime Flow
 
