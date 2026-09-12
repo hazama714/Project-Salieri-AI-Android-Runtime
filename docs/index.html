@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Android Edge AI Runtime for Unity — local GGUF inference and native Android runtime integration for Unity by Studio Hazama 714.">
+  <meta name="theme-color" content="#0b1020">
+  <title>Android Edge AI Runtime for Unity | Studio Hazama 714</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">Android Edge AI Runtime</a>
+      <nav aria-label="Primary navigation">
+        <a href="#product">Product</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#repository">Repository</a>
+        <a href="https://hazama714.github.io/support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Current Product · Unity · Android · Local AI</p>
+          <h1>Android Edge AI<br>Runtime for Unity</h1>
+          <p class="lead">
+            A Unity runtime integration for running compatible local GGUF language models
+            directly on supported Android devices. Unity C# connects to a native C++ runtime
+            without requiring a separate inference server.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="https://github.com/hazama714/Project-Salieri-AI-Android-Runtime">GitHub Repository</a>
+            <a class="button secondary" href="https://hazama714.github.io/">Studio Hazama 714</a>
+          </div>
+          <p class="status-note">Available as a current Studio Hazama 714 product on the Unity Asset Store.</p>
+        </div>
+
+        <div class="runtime-card" aria-label="Runtime architecture">
+          <div class="runtime-node"><span>Unity application</span><strong>C#</strong></div>
+          <div class="runtime-arrow">↓</div>
+          <div class="runtime-node"><span>Native integration</span><strong>P/Invoke</strong></div>
+          <div class="runtime-arrow">↓</div>
+          <div class="runtime-node"><span>On-device runtime</span><strong>C++ / GGUF</strong></div>
+          <div class="runtime-arrow">↓</div>
+          <div class="runtime-node"><span>Target hardware</span><strong>Android arm64</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="product" class="section">
+      <div class="container">
+        <p class="eyebrow">Product</p>
+        <h2>Local AI inference inside a Unity Android application.</h2>
+        <p class="section-intro">
+          The runtime is designed for Unity projects that need local language-model execution
+          on Android hardware. It keeps inference close to the application and reduces dependence
+          on network-hosted inference services.
+        </p>
+
+        <div class="feature-grid">
+          <article class="card"><p class="card-kicker">01</p><h3>Local inference</h3><p>Run compatible GGUF language models directly on supported Android devices.</p></article>
+          <article class="card"><p class="card-kicker">02</p><h3>Unity integration</h3><p>Call the native runtime from Unity C# through a direct application integration layer.</p></article>
+          <article class="card"><p class="card-kicker">03</p><h3>Offline-oriented</h3><p>Useful for projects that benefit from local execution and reduced network dependence.</p></article>
+          <article class="card"><p class="card-kicker">04</p><h3>Android arm64</h3><p>Built around deployment to supported Android arm64 hardware and native runtime execution.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="workflow" class="section alt">
+      <div class="container split-panel">
+        <div>
+          <p class="eyebrow">Typical workflow</p>
+          <h2>From Unity project to Android device.</h2>
+          <p>
+            Model files are supplied separately. Actual compatibility, speed, and memory use depend
+            on the selected model, device, available memory, and project configuration.
+          </p>
+        </div>
+        <ol class="steps">
+          <li><span>1</span>Import and configure the runtime in a Unity project.</li>
+          <li><span>2</span>Set the local model path and runtime parameters.</li>
+          <li><span>3</span>Build the Unity application for a supported Android arm64 device.</li>
+          <li><span>4</span>Load the compatible GGUF model on the device.</li>
+          <li><span>5</span>Run inference locally from the Unity application.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="repository" class="section">
+      <div class="container narrow">
+        <p class="eyebrow">Technical repository</p>
+        <h2>Source and architecture reference.</h2>
+        <p>
+          The public repository contains Android/Unity runtime architecture material, source code,
+          diagrams, and development references. It is not intended to be a complete clone-and-run
+          copy of the commercial package: external runtimes, models, third-party assets, and some
+          environment-specific files are intentionally excluded.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="https://github.com/hazama714/Project-Salieri-AI-Android-Runtime#readme">Read README</a>
+          <a class="button secondary" href="https://github.com/hazama714/Project-Salieri-AI-Android-Runtime">Open GitHub</a>
+          <a class="button secondary" href="https://hazama714.github.io/support.html">Support</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact">
+      <div class="container callout">
+        <div>
+          <p class="eyebrow">Related project</p>
+          <h2>Project Salieri AI</h2>
+          <p>
+            Physical AI research and development connecting perception, conversation, character motion,
+            VirtualBody, and real-world robot control.
+          </p>
+        </div>
+        <a class="button secondary" href="https://hazama714.github.io/Project-Salieri-AI/">Open Project Salieri AI</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Studio Hazama 714</p>
+      <div class="footer-links">
+        <a href="https://hazama714.github.io/">Studio Home</a>
+        <a href="https://github.com/hazama714/Project-Salieri-AI-Android-Runtime">GitHub</a>
+        <a href="https://hazama714.github.io/support.html">Support</a>
+        <a href="https://hazama714.github.io/privacy.html">Privacy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
