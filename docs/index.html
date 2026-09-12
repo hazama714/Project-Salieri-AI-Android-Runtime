@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Android Edge AI Runtime for Unity — local GGUF inference and native Android runtime integration for Unity by Studio Hazama 714.">
+  <meta name="description" content="Android Edge AI Runtime for Unity — Unity向けAndroidローカルGGUF推論・Native Runtime統合。Local GGUF inference and native Android runtime integration for Unity by Studio Hazama 714.">
   <meta name="theme-color" content="#0b1020">
   <title>Android Edge AI Runtime for Unity | Studio Hazama 714</title>
   <link rel="stylesheet" href="style.css">
@@ -13,10 +13,10 @@
     <div class="container header-inner">
       <a class="brand" href="#top">Android Edge AI Runtime</a>
       <nav aria-label="Primary navigation">
-        <a href="#product">Product</a>
-        <a href="#workflow">Workflow</a>
-        <a href="#repository">Repository</a>
-        <a href="https://hazama714.github.io/support.html">Support</a>
+        <a href="#product">製品 / Product</a>
+        <a href="#workflow">導入 / Workflow</a>
+        <a href="#repository">技術資料 / Repository</a>
+        <a href="https://hazama714.github.io/support.html">サポート / Support</a>
       </nav>
     </div>
   </header>
@@ -25,47 +25,56 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <p class="eyebrow">Current Product · Unity · Android · Local AI</p>
+          <p class="eyebrow">現行製品 / Current Product · Unity · Android · Local AI</p>
           <h1>Android Edge AI<br>Runtime for Unity</h1>
+          <p class="hero-title-ja">Unityアプリ内で、対応するローカルGGUFモデルをAndroid端末上で実行するためのRuntime。</p>
           <p class="lead">
-            A Unity runtime integration for running compatible local GGUF language models
-            directly on supported Android devices. Unity C# connects to a native C++ runtime
-            without requiring a separate inference server.
+            Unity C#からNative C++ Runtimeへ直接接続し、別途推論サーバーを用意せずに、
+            対応Android端末上でローカル言語モデルを実行するためのUnity向けRuntime統合です。
+          </p>
+          <p class="lead lang-en" lang="en">
+            A Unity runtime integration for running compatible local GGUF language models directly on supported Android devices.
+            Unity C# connects to a native C++ runtime without requiring a separate inference server.
           </p>
           <div class="actions">
             <a class="button primary" href="https://github.com/hazama714/Project-Salieri-AI-Android-Runtime">GitHub Repository</a>
             <a class="button secondary" href="https://hazama714.github.io/">Studio Hazama 714</a>
           </div>
-          <p class="status-note">Available as a current Studio Hazama 714 product on the Unity Asset Store.</p>
+          <p class="status-note">現在、Unity Asset Storeで販売中のStudio Hazama 714製品です。</p>
+          <p class="status-note lang-en" lang="en">Available as a current Studio Hazama 714 product on the Unity Asset Store.</p>
         </div>
 
         <div class="runtime-card" aria-label="Runtime architecture">
-          <div class="runtime-node"><span>Unity application</span><strong>C#</strong></div>
+          <div class="runtime-node"><span>Unityアプリ / Unity application</span><strong>C#</strong></div>
           <div class="runtime-arrow">↓</div>
-          <div class="runtime-node"><span>Native integration</span><strong>P/Invoke</strong></div>
+          <div class="runtime-node"><span>Native統合 / Native integration</span><strong>P/Invoke</strong></div>
           <div class="runtime-arrow">↓</div>
-          <div class="runtime-node"><span>On-device runtime</span><strong>C++ / GGUF</strong></div>
+          <div class="runtime-node"><span>端末内Runtime / On-device runtime</span><strong>C++ / GGUF</strong></div>
           <div class="runtime-arrow">↓</div>
-          <div class="runtime-node"><span>Target hardware</span><strong>Android arm64</strong></div>
+          <div class="runtime-node"><span>対象端末 / Target hardware</span><strong>Android arm64</strong></div>
         </div>
       </div>
     </section>
 
     <section id="product" class="section">
       <div class="container">
-        <p class="eyebrow">Product</p>
-        <h2>Local AI inference inside a Unity Android application.</h2>
+        <p class="eyebrow">製品 / Product</p>
+        <h2>Unity Androidアプリの中でローカルAI推論を動かす。</h2>
+        <p class="heading-en" lang="en">Run local AI inference inside a Unity Android application.</p>
         <p class="section-intro">
-          The runtime is designed for Unity projects that need local language-model execution
-          on Android hardware. It keeps inference close to the application and reduces dependence
-          on network-hosted inference services.
+          Android端末上でローカル言語モデルを実行したいUnityプロジェクト向けのRuntimeです。
+          推論処理をアプリケーションの近くに置き、ネットワーク上の推論サービスへの依存を減らすことを目的としています。
+        </p>
+        <p class="section-intro lang-en" lang="en">
+          The runtime is designed for Unity projects that need local language-model execution on Android hardware.
+          It keeps inference close to the application and reduces dependence on network-hosted inference services.
         </p>
 
         <div class="feature-grid">
-          <article class="card"><p class="card-kicker">01</p><h3>Local inference</h3><p>Run compatible GGUF language models directly on supported Android devices.</p></article>
-          <article class="card"><p class="card-kicker">02</p><h3>Unity integration</h3><p>Call the native runtime from Unity C# through a direct application integration layer.</p></article>
-          <article class="card"><p class="card-kicker">03</p><h3>Offline-oriented</h3><p>Useful for projects that benefit from local execution and reduced network dependence.</p></article>
-          <article class="card"><p class="card-kicker">04</p><h3>Android arm64</h3><p>Built around deployment to supported Android arm64 hardware and native runtime execution.</p></article>
+          <article class="card"><p class="card-kicker">01</p><h3>ローカル推論 / Local inference</h3><p>対応するGGUF言語モデルを、対応Android端末上で直接実行します。</p><p class="lang-en" lang="en">Run compatible GGUF language models directly on supported Android devices.</p></article>
+          <article class="card"><p class="card-kicker">02</p><h3>Unity統合 / Unity integration</h3><p>Unity C#から直接Native Runtimeを呼び出すアプリケーション統合層を提供します。</p><p class="lang-en" lang="en">Call the native runtime from Unity C# through a direct application integration layer.</p></article>
+          <article class="card"><p class="card-kicker">03</p><h3>オフライン志向 / Offline-oriented</h3><p>ローカル実行やネットワーク依存の低減が重要なプロジェクトで利用できます。</p><p class="lang-en" lang="en">Useful for projects that benefit from local execution and reduced network dependence.</p></article>
+          <article class="card"><p class="card-kicker">04</p><h3>Android arm64</h3><p>対応Android arm64端末へのデプロイとNative Runtime実行を前提に構成しています。</p><p class="lang-en" lang="en">Built around deployment to supported Android arm64 hardware and native runtime execution.</p></article>
         </div>
       </div>
     </section>
@@ -73,37 +82,47 @@
     <section id="workflow" class="section alt">
       <div class="container split-panel">
         <div>
-          <p class="eyebrow">Typical workflow</p>
-          <h2>From Unity project to Android device.</h2>
+          <p class="eyebrow">導入の流れ / Typical workflow</p>
+          <h2>UnityプロジェクトからAndroid実機へ。</h2>
+          <p class="heading-en" lang="en">From Unity project to Android device.</p>
           <p>
-            Model files are supplied separately. Actual compatibility, speed, and memory use depend
-            on the selected model, device, available memory, and project configuration.
+            モデルファイルは別途用意します。実際の互換性、速度、メモリ使用量は、使用するモデル、端末、
+            利用可能メモリ、プロジェクト設定によって異なります。
+          </p>
+          <p class="lang-en" lang="en">
+            Model files are supplied separately. Actual compatibility, speed, and memory use depend on the selected model,
+            device, available memory, and project configuration.
           </p>
         </div>
         <ol class="steps">
-          <li><span>1</span>Import and configure the runtime in a Unity project.</li>
-          <li><span>2</span>Set the local model path and runtime parameters.</li>
-          <li><span>3</span>Build the Unity application for a supported Android arm64 device.</li>
-          <li><span>4</span>Load the compatible GGUF model on the device.</li>
-          <li><span>5</span>Run inference locally from the Unity application.</li>
+          <li><span>1</span><div>UnityプロジェクトへRuntimeを導入・設定する。<small lang="en">Import and configure the runtime in a Unity project.</small></div></li>
+          <li><span>2</span><div>ローカルモデルのパスとRuntimeパラメータを設定する。<small lang="en">Set the local model path and runtime parameters.</small></div></li>
+          <li><span>3</span><div>対応Android arm64端末向けにUnityアプリをビルドする。<small lang="en">Build the Unity application for a supported Android arm64 device.</small></div></li>
+          <li><span>4</span><div>対応GGUFモデルを端末上で読み込む。<small lang="en">Load the compatible GGUF model on the device.</small></div></li>
+          <li><span>5</span><div>Unityアプリからローカル推論を実行する。<small lang="en">Run inference locally from the Unity application.</small></div></li>
         </ol>
       </div>
     </section>
 
     <section id="repository" class="section">
       <div class="container narrow">
-        <p class="eyebrow">Technical repository</p>
-        <h2>Source and architecture reference.</h2>
+        <p class="eyebrow">技術Repository / Technical repository</p>
+        <h2>SourceとArchitectureの参照資料。</h2>
+        <p class="heading-en" lang="en">Source and architecture reference.</p>
         <p>
-          The public repository contains Android/Unity runtime architecture material, source code,
-          diagrams, and development references. It is not intended to be a complete clone-and-run
-          copy of the commercial package: external runtimes, models, third-party assets, and some
-          environment-specific files are intentionally excluded.
+          公開Repositoryには、Android / Unity RuntimeのArchitecture資料、Source Code、構成図、開発時の参照資料を含みます。
+          商用パッケージをそのままcloneして完全動作させるためのものではなく、外部Runtime、モデル、第三者Asset、
+          一部の環境依存ファイルは意図的に含めていません。
+        </p>
+        <p class="lang-en" lang="en">
+          The public repository contains Android/Unity runtime architecture material, source code, diagrams, and development references.
+          It is not intended to be a complete clone-and-run copy of the commercial package: external runtimes, models,
+          third-party assets, and some environment-specific files are intentionally excluded.
         </p>
         <div class="actions">
-          <a class="button primary" href="https://github.com/hazama714/Project-Salieri-AI-Android-Runtime#readme">Read README</a>
-          <a class="button secondary" href="https://github.com/hazama714/Project-Salieri-AI-Android-Runtime">Open GitHub</a>
-          <a class="button secondary" href="https://hazama714.github.io/support.html">Support</a>
+          <a class="button primary" href="https://github.com/hazama714/Project-Salieri-AI-Android-Runtime#readme">READMEを読む / Read README</a>
+          <a class="button secondary" href="https://github.com/hazama714/Project-Salieri-AI-Android-Runtime">GitHubを開く / Open GitHub</a>
+          <a class="button secondary" href="https://hazama714.github.io/support.html">サポート / Support</a>
         </div>
       </div>
     </section>
@@ -111,14 +130,16 @@
     <section class="section compact">
       <div class="container callout">
         <div>
-          <p class="eyebrow">Related project</p>
+          <p class="eyebrow">関連プロジェクト / Related project</p>
           <h2>Project Salieri AI</h2>
           <p>
-            Physical AI research and development connecting perception, conversation, character motion,
-            VirtualBody, and real-world robot control.
+            知覚・会話・キャラクター動作・VirtualBody・現実のロボット制御を接続するPhysical AIの研究開発プロジェクトです。
+          </p>
+          <p class="lang-en" lang="en">
+            Physical AI research and development connecting perception, conversation, character motion, VirtualBody, and real-world robot control.
           </p>
         </div>
-        <a class="button secondary" href="https://hazama714.github.io/Project-Salieri-AI/">Open Project Salieri AI</a>
+        <a class="button secondary" href="https://hazama714.github.io/Project-Salieri-AI/">Project Salieri AIを開く / Open Project Salieri AI</a>
       </div>
     </section>
   </main>
